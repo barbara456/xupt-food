@@ -53,7 +53,7 @@ export default {
       }, {
         id: '0009',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png',
-        desc: '校园观光车'
+        desc: '校园观光车牛牛牛牛'
       }]
     }
   },
