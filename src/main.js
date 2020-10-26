@@ -6,7 +6,7 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import router from './router'
 import 'styles/reset.css'
 import 'styles/border.css'
-import 'styles/iconfont.css'
+import './assets/styles/iconfont.css'
 import 'swiper/dist/css/swiper.css'
 
 Vue.config.productionTip = false
