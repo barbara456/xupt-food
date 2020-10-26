@@ -25,35 +25,35 @@ export default {
       iconList: [{
         id: '0001',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png',
-        desc: '景点门票'
+        desc: '学校景点'
       }, {
         id: '0002',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1711/df/86cbcfc533330d02.png',
-        desc: '滑雪季'
+        desc: '出门玩乐'
       }, {
         id: '0003',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1710/a6/83f636bd75ae6302.png',
-        desc: '泡温泉'
+        desc: '情侣咖啡'
       }, {
         id: '0004',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1611/35/2640cab202c41b02.png',
-        desc: '动植园'
+        desc: '室外约会'
       }, {
         id: '0006',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1711/df/86cbcfc533330d02.png',
-        desc: '滑雪季'
+        desc: '出门玩乐'
       }, {
         id: '0007',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1710/a6/83f636bd75ae6302.png',
-        desc: '泡温泉'
+        desc: '情侣咖啡'
       }, {
         id: '0008',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1611/35/2640cab202c41b02.png',
-        desc: '动植园'
+        desc: '室外约会'
       }, {
         id: '0009',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png',
-        desc: '一日游'
+        desc: '校园观光车'
       }]
     }
   },
