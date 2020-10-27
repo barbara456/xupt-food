@@ -1,13 +1,15 @@
 <template>
   <div>
-  <div class="title">热销好菜推荐</div>
+  <div class="title">下课吃啥推荐</div>
   <ul>
     <li
     class="item border-bottom"
     v-for="item of recommendList"
     :key="item.id"
     >
+      <div class="item-img-wrapper">
          <img class="item-img" :src="item.imgUrl">
+      </div>
       <div class="item-info">
         <p class="item-title">{{item.title}}</p>
         <p class="item-desc">{{item.desc}}</p>
@@ -24,7 +26,7 @@
 
 <script>
 export default {
-  name: 'HomeSwiper',
+  name: 'HomeWeekend',
   data(){
     return{
       recommendList:[{
@@ -60,7 +62,6 @@ export default {
   }
 }
 </script>
-
 <style lang='stylus' scoped>
 @import '~styles/mixins.styl'
 .title
@@ -68,34 +69,33 @@ export default {
   line-height .8rem
   background #eee
   text-indent .2rem
-.item
-  display flex
-  height 1.9rem
+.item-img-wrapper
   overflow hidden
+  height 0
+  padding-bottom 33.9%
   .item-img
-    width 1.7rem
-    height 1.7rem
-    padding .1rem
-  .item-info
-    flex 1
-    padding .1rem
-    min-width 0
-    .item-title
-      line-height .54rem
-      font-size .32rem
-      ellipsis()
-    .item-desc
-      line-height .4rem
-      color #ccc
-      ellipsis()
-    .item-button
-      line-height .44rem
-      margin-top .16rem
-      background #ff9300
-      padding 0 .2rem
-      border-radius .06rem
-      color #fff
-      .item-price
-        text-decoration line-through
-        color red
+    width 100%
+    height 2.5rem
+.item-info
+  flex 1
+  padding .1rem
+  min-width 0
+  .item-title
+    line-height .54rem
+    font-size .32rem
+    ellipsis()
+  .item-desc
+    line-height .4rem
+    color #ccc
+    ellipsis()
+  .item-button
+    line-height .44rem
+    margin-top .16rem
+    background #ff9300
+    padding 0 .2rem
+    border-radius .06rem
+    color #fff
+    .item-price
+      text-decoration line-through
+      color red
 </style>
