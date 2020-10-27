@@ -62,7 +62,6 @@ export default {
   }
 }
 </script>
-
 <style lang='stylus' scoped>
 @import '~styles/mixins.styl'
 .title
