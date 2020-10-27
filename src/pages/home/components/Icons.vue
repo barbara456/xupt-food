@@ -25,15 +25,15 @@ export default {
       iconList: [{
         id: '0001',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png',
-        desc: '学校景点'
+        desc: '团购优惠'
       }, {
         id: '0002',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1711/df/86cbcfc533330d02.png',
-        desc: '出门玩乐'
+        desc: '校内跑腿'
       }, {
         id: '0003',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1710/a6/83f636bd75ae6302.png',
-        desc: '情侣咖啡'
+        desc: '自取趁热'
       }, {
         id: '0004',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1611/35/2640cab202c41b02.png',
@@ -41,19 +41,19 @@ export default {
       }, {
         id: '0006',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1711/df/86cbcfc533330d02.png',
-        desc: '出门玩乐'
+        desc: '送药上门'
       }, {
         id: '0007',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1710/a6/83f636bd75ae6302.png',
-        desc: '情侣咖啡'
+        desc: '甜品饮品'
       }, {
         id: '0008',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1611/35/2640cab202c41b02.png',
-        desc: '室外约会'
+        desc: '超市便利'
       }, {
         id: '0009',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png',
-        desc: '校园观光车牛牛牛牛'
+        desc: '一键直达'
       }]
     }
   },
