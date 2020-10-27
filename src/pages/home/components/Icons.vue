@@ -25,11 +25,11 @@ export default {
       iconList: [{
         id: '0001',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png',
-        desc: '学校景点'
+        desc: '超市便利'
       }, {
         id: '0002',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1711/df/86cbcfc533330d02.png',
-        desc: '出门玩乐'
+        desc: '快速自取'
       }, {
         id: '0003',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1710/a6/83f636bd75ae6302.png',
@@ -41,15 +41,15 @@ export default {
       }, {
         id: '0006',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1711/df/86cbcfc533330d02.png',
-        desc: '出门玩乐'
+        desc: '送药上门'
       }, {
         id: '0007',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1710/a6/83f636bd75ae6302.png',
-        desc: '情侣咖啡'
+        desc: '饮品甜品'
       }, {
         id: '0008',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1611/35/2640cab202c41b02.png',
-        desc: '室外约会'
+        desc: '美食外卖'
       }, {
         id: '0009',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png',
@@ -79,33 +79,35 @@ export default {
   .icons >>> .swiper-container
     height: 0
     padding-bottom: 50%
-  .icon
-    position: relative
-    overflow: hidden
-    float: left
-    width: 25%
-    height: 0
-    padding-bottom: 25%
-    .icon-img
-      position: absolute
-      top: 0
-      left: 0
-      right: 0
-      bottom: .44rem
-      box-sizing: border-box
-      padding: .1rem
-      .icon-img-content
-        display: block
-        margin: 0 auto
-        height: 100%
-    .icon-desc
-      position: absolute
-      left: 0
-      right: 0
-      bottom: 0
-      height: .44rem
-      line-height: .44rem
-      text-align: center
-      color: $darkTextColor
-      ellipsis()
+  .icons
+    margin-top .1rem
+    .icon
+      position: relative
+      overflow: hidden
+      float: left
+      width: 25%
+      height: 0
+      padding-bottom: 25%
+      .icon-img
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: .44rem
+        box-sizing: border-box
+        padding: .1rem
+        .icon-img-content
+          display: block
+          margin: 0 auto
+          height: 100%
+      .icon-desc
+        position: absolute
+        left: 0
+        right: 0
+        bottom: 0
+        height: .44rem
+        line-height: .44rem
+        text-align: center
+        color: $darkTextColor
+        ellipsis()
 </style>
