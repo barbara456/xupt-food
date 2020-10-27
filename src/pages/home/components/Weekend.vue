@@ -13,11 +13,11 @@
       <div class="item-info">
         <p class="item-title">{{item.title}}</p>
         <p class="item-desc">{{item.desc}}</p>
-        <button class="item-button">
+        <!-- <button class="item-button">
           {{item.discount}}
           <span class="item-price">{{item.usual}}</span>
           <span class="iconfont item-icon">抢!!!&#xe61c;</span>
-          </button>
+          </button> -->
       </div>
     </li>
   </ul>
@@ -42,7 +42,14 @@ export default {
         title:'黄焖鸡套餐+香菇+鱼豆腐+金针菇',
         desc:'吉周客黄焖鸡（政法店）',
         discount:'$19.9',
-        usual:'29.9'
+        usual:'$29.9'
+      },{
+        id:'0003',
+        imgUrl:require('imgs/chicken.jpg'),
+        title:'黄焖鸡套餐+香菇+鱼豆腐+金针菇',
+        desc:'吉周客黄焖鸡（政法店）',
+        discount:'$19.9',
+        usual:'$29.9'
       },{
         id:'0004',
         imgUrl:require('imgs/chicken.jpg'),
@@ -51,12 +58,12 @@ export default {
         discount:'$19.9',
         usual:'$29.9'
       },{
-        id:'0002',
+        id:'0005',
         imgUrl:require('imgs/chicken.jpg'),
         title:'黄焖鸡套餐+香菇+鱼豆腐+金针菇',
         desc:'吉周客黄焖鸡（政法店）',
         discount:'$19.9',
-        usual:'29.9'
+        usual:'$29.9'
       }]
     }
   }
@@ -77,9 +84,7 @@ export default {
     width 100%
     height 2.5rem
 .item-info
-  flex 1
   padding .1rem
-  min-width 0
   .item-title
     line-height .54rem
     font-size .32rem
@@ -88,14 +93,14 @@ export default {
     line-height .4rem
     color #ccc
     ellipsis()
-  .item-button
-    line-height .44rem
-    margin-top .16rem
-    background #ff9300
-    padding 0 .2rem
-    border-radius .06rem
-    color #fff
-    .item-price
-      text-decoration line-through
-      color red
+  // .item-button
+  //   line-height .44rem
+  //   margin-top .16rem
+  //   background #ff9300
+  //   padding 0 .2rem
+  //   border-radius .06rem
+  //   color #fff
+  //   .item-price
+  //     text-decoration line-through
+  //     color red
 </style>
