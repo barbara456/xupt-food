@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: 'HomeSwiper',
+  name: 'HomeRecommend',
   data(){
     return{
       recommendList:[{
