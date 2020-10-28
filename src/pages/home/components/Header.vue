@@ -5,7 +5,7 @@
     <div class="header-input">
       <span class="iconfont">&#xe60c;</span>
       输入想吃的/想买的/想玩的</div>
-    <div class="header-right">食堂
+    <div class="header-right">{{this.city}}
       <span class="iconfont arrow-icon">&#xe600;</span>
     </div>
   </div>
@@ -15,6 +15,9 @@
 <script>
 export default {
   name: 'HomeHeader',
+  props:{
+    city:String
+  }
 }
 </script>
 

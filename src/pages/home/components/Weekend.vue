@@ -4,7 +4,7 @@
   <ul>
     <li
     class="item border-bottom"
-    v-for="item of recommendList"
+    v-for="item of list"
     :key="item.id"
     >
       <div class="item-img-wrapper">
@@ -27,59 +27,21 @@
 <script>
 export default {
   name: 'HomeWeekend',
-  data(){
-    return{
-      recommendList:[{
-        id:'0001',
-        imgUrl:require('imgs/chicken.jpg'),
-        title:'黄焖鸡套餐+香菇+鱼豆腐+金针菇',
-        desc:'吉周客黄焖鸡（政法店）',
-        discount:'$19.9',
-        usual:'$29.9'
-      },{
-        id:'0002',
-        imgUrl:require('imgs/chicken.jpg'),
-        title:'黄焖鸡套餐+香菇+鱼豆腐+金针菇',
-        desc:'吉周客黄焖鸡（政法店）',
-        discount:'$19.9',
-        usual:'$29.9'
-      },{
-        id:'0003',
-        imgUrl:require('imgs/chicken.jpg'),
-        title:'黄焖鸡套餐+香菇+鱼豆腐+金针菇',
-        desc:'吉周客黄焖鸡（政法店）',
-        discount:'$19.9',
-        usual:'$29.9'
-      },{
-        id:'0004',
-        imgUrl:require('imgs/chicken.jpg'),
-        title:'黄焖鸡套餐+香菇+鱼豆腐+金针菇',
-        desc:'吉周客黄焖鸡（政法店）',
-        discount:'$19.9',
-        usual:'$29.9'
-      },{
-        id:'0005',
-        imgUrl:require('imgs/chicken.jpg'),
-        title:'黄焖鸡套餐+香菇+鱼豆腐+金针菇',
-        desc:'吉周客黄焖鸡（政法店）',
-        discount:'$19.9',
-        usual:'$29.9'
-      }]
-    }
+  props:{
+    list:Array
   }
 }
 </script>
 <style lang='stylus' scoped>
 @import '~styles/mixins.styl'
 .title
-  margin-top .2rem
   line-height .8rem
   background #eee
   text-indent .2rem
 .item-img-wrapper
   overflow hidden
   height 0
-  padding-bottom 33.9%
+  padding-bottom 37.09%
   .item-img
     width 100%
     height 2.5rem

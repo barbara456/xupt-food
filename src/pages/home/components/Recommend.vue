@@ -4,7 +4,7 @@
   <ul>
     <li
     class="item border-bottom"
-    v-for="item of recommendList"
+    v-for="item of list"
     :key="item.id"
     >
          <img class="item-img" :src="item.imgUrl">
@@ -25,38 +25,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data(){
-    return{
-      recommendList:[{
-        id:'0001',
-        imgUrl:require('imgs/chicken.jpg'),
-        title:'黄焖鸡套餐+香菇+鱼豆腐+金针菇',
-        desc:'吉周客黄焖鸡（政法店）',
-        discount:'$19.9',
-        usual:'$29.9'
-      },{
-        id:'0002',
-        imgUrl:require('imgs/chicken.jpg'),
-        title:'黄焖鸡套餐+香菇+鱼豆腐+金针菇',
-        desc:'吉周客黄焖鸡（政法店）',
-        discount:'$19.9',
-        usual:'29.9'
-      },{
-        id:'0003',
-        imgUrl:require('imgs/chicken.jpg'),
-        title:'黄焖鸡套餐+香菇+鱼豆腐+金针菇',
-        desc:'吉周客黄焖鸡（政法店）',
-        discount:'$19.9',
-        usual:'$29.9'
-      },{
-        id:'0004',
-        imgUrl:require('imgs/chicken.jpg'),
-        title:'黄焖鸡套餐+香菇+鱼豆腐+金针菇',
-        desc:'吉周客黄焖鸡（政法店）',
-        discount:'$19.9',
-        usual:'29.9'
-      }]
-    }
+  props:{
+    list:Array
   }
 }
 </script>
