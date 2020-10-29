@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    美食选择
+    想吃什么
     <router-link to="/">
       <div class="iconfont header-back">&#xe60b;</div>
     </router-link>
