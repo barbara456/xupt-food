@@ -5,7 +5,7 @@
     <div class="header-input">
       <span class="iconfont">&#xe60c;</span>
       输入想吃的/想买的/想玩的</div>
-    <router-link to="/city">
+    <router-link to="/food">
       <div class="header-right">{{this.food}}
         <span class="iconfont arrow-icon">&#xe600;</span>
       </div>
