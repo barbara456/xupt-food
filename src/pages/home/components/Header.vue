@@ -5,9 +5,11 @@
     <div class="header-input">
       <span class="iconfont">&#xe60c;</span>
       输入想吃的/想买的/想玩的</div>
-    <div class="header-right">{{this.city}}
-      <span class="iconfont arrow-icon">&#xe600;</span>
-    </div>
+    <router-link to="/city">
+      <div class="header-right">{{this.food}}
+        <span class="iconfont arrow-icon">&#xe600;</span>
+      </div>
+    </router-link>
   </div>
 </div>
 </template>
@@ -16,7 +18,7 @@
 export default {
   name: 'HomeHeader',
   props:{
-    city:String
+    food:String
   }
 }
 </script>
@@ -25,7 +27,7 @@ export default {
 @import '~styles/varibles.styl'
 .header
   display flex
-  line-height .86rem
+  line-height $headerHeight
   background $bgColor
   color #fff
   .header-left
@@ -48,6 +50,7 @@ export default {
     float right
     text-align center
     font-size 16px
+    color #fff
     .arrow-icon
       margin-left -.06rem
       font-size .3rem
