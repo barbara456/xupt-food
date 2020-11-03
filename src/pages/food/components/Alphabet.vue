@@ -1,11 +1,11 @@
 <template>
   <ul class="list">
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
+    <li
+      class="item"
+      v-for='(item,key) of foods'
+      :key="key"
+    >
+    {{key}}</li>
   </ul>
 </template>
 
@@ -13,7 +13,10 @@
 
 export default {
   name: 'FoodAlphabet',
+  props:{
+    foods:Object
   }
+}
 </script>
 
 <style lang="stylus" scoped>

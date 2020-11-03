@@ -12,58 +12,27 @@
       <div class="area">
         <div class="title border-topbottom">大家爱吃</div>
         <div class="button-list">
-            <div class="button-wrapper">
-              <div class="button">北京</div>
-            </div>
-            <div class="button-wrapper">
-              <div class="button">北京</div>
-            </div>
-            <div class="button-wrapper">
-              <div class="button">北京</div>
-            </div>
-            <div class="button-wrapper">
-              <div class="button">北京</div>
+            <div
+              class="button-wrapper"
+              v-for="item of hot"
+              :key="item.id"
+            >
+              <div class="button">{{item.name}}</div>
             </div>
         </div>
       </div>
-      <div class="area">
-        <div class="title border-topbottom">A</div>
-        <div class="item-list">
-          <div class="item border-bottom">阿记烧烤</div>
-          <div class="item border-bottom">阿记烧烤</div>
-          <div class="item border-bottom">阿记烧烤</div>
-          <div class="item border-bottom">阿记烧烤</div>
-          <div class="item border-bottom">阿记烧烤</div>
-        </div>
-      </div>
-      <div class="area">
-        <div class="title border-topbottom">A</div>
-        <div class="item-list">
-          <div class="item border-bottom">阿记烧烤</div>
-          <div class="item border-bottom">阿记烧烤</div>
-          <div class="item border-bottom">阿记烧烤</div>
-          <div class="item border-bottom">阿记烧烤</div>
-          <div class="item border-bottom">阿记烧烤</div>
-        </div>
-      </div>
-      <div class="area">
-        <div class="title border-topbottom">A</div>
-        <div class="item-list">
-          <div class="item border-bottom">阿记烧烤</div>
-          <div class="item border-bottom">阿记烧烤</div>
-          <div class="item border-bottom">阿记烧烤</div>
-          <div class="item border-bottom">阿记烧烤</div>
-          <div class="item border-bottom">阿记烧烤</div>
-        </div>
-      </div>
-      <div class="area">
-        <div class="title border-topbottom">A</div>
-        <div class="item-list">
-          <div class="item border-bottom">阿记烧烤</div>
-          <div class="item border-bottom">阿记烧烤</div>
-          <div class="item border-bottom">阿记烧烤</div>
-          <div class="item border-bottom">阿记烧烤</div>
-          <div class="item border-bottom">阿记烧烤</div>
+      <div
+        class="area"
+        v-for="(item,key) of foods"
+        :key="key"
+      >
+        <div class="title border-topbottom">{{key}}</div>
+        <div
+          class="item-list"
+          v-for="innerItem of item"
+          :key="innerItem.id"
+        >
+          <div class="item border-bottom">{{innerItem.name}}</div>
         </div>
       </div>
     </div>
@@ -74,6 +43,10 @@
 import Bscroll from 'better-scroll'
 export default {
   name: 'FoodList',
+  props:{
+    hot:Array,
+    foods:Object
+  },
   mounted(){
     this.scroll=new Bscroll(this.$refs.wrapper)
   }
