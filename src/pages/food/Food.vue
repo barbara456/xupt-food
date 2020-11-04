@@ -2,8 +2,15 @@
   <div>
     <food-header></food-header>
     <food-search></food-search>
-    <food-list :foods='foods' :hot='hotFoods'></food-list>
-    <food-alphabet :foods="foods"></food-alphabet>
+    <food-list
+      :foods='foods'
+      :hot='hotFoods'
+      :letter='letter'
+    ></food-list>
+    <food-alphabet
+      :foods="foods"
+      @change="handleLetterChange"
+    ></food-alphabet>
   </div>
 </template>
 
@@ -25,7 +32,8 @@ export default {
   data(){
     return{
       foods:{},
-      hotFoods:[]
+      hotFoods:[],
+      letter:''
     }
   },
   methods:{
@@ -40,6 +48,9 @@ export default {
         this.foods=data.foods
         this.hotFoods=data.hotFoods
       }
+    },
+    handleLetterChange(letter){
+      this.letter=letter
     }
   },
   mounted(){

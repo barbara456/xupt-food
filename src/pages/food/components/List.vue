@@ -25,6 +25,7 @@
         class="area"
         v-for="(item,key) of foods"
         :key="key"
+        :ref="key"
       >
         <div class="title border-topbottom">{{key}}</div>
         <div
@@ -45,10 +46,17 @@ export default {
   name: 'FoodList',
   props:{
     hot:Array,
-    foods:Object
+    foods:Object,
+    letter:String
   },
   mounted(){
     this.scroll=new Bscroll(this.$refs.wrapper)
+  },
+  watch:{
+    letter(){
+      const element = this.$refs[this.letter][0]
+      this.scroll.scrollToElement(element)
+    }
   }
   }
 </script>
