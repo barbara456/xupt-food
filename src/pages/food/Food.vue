@@ -1,7 +1,7 @@
 <template>
   <div>
     <food-header></food-header>
-    <food-search></food-search>
+    <food-search :foods='foods'></food-search>
     <food-list
       :foods='foods'
       :hot='hotFoods'
