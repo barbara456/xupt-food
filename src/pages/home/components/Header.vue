@@ -6,7 +6,7 @@
       <span class="iconfont">&#xe60c;</span>
       输入想吃的/想买的/想玩的</div>
     <router-link to="/food">
-      <div class="header-right">{{this.food}}
+      <div class="header-right">{{this.$store.state.food}}
         <span class="iconfont arrow-icon">&#xe600;</span>
       </div>
     </router-link>
@@ -17,9 +17,6 @@
 <script>
 export default {
   name: 'HomeHeader',
-  props:{
-    food:String
-  }
 }
 </script>
 
