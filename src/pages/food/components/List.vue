@@ -42,19 +42,19 @@ export default {
     letter: String,
   },
   methods: {
-    handleFoodClick(food) {
-      this.$store.dispatch("changefood", food);
+    handleFoodClick (food) {
+      this.$store.dispatch("changefood",food)
       // console.log(food)
     },
+  },
+  mounted() {
+  this.scroll = new Bscroll(this.$refs.wrapper);
   },
   watch: {
     letter() {
       const element = this.$refs[this.letter][0];
       this.scroll.scrollToElement(element);
     },
-  },
-  mounted() {
-    this.scroll = new Bscroll(this.$refs.wrapper);
   },
 };
 </script>

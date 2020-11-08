@@ -9,13 +9,12 @@ export default new Vuex.Store({
   },
   actions: {
     changefood(fdx, food) {
-      console.log(food)
-      // fdx.commit('changeFood',food)
+      fdx.commit('changeFood',food)
     }
   },
-  // mutations:{
-  //   changeFood(state,food){
-  //   state.food=food
-  //   }
-  // }
+  mutations:{
+    changeFood(state,food){
+    state.food=food
+    }
+  }
 })
