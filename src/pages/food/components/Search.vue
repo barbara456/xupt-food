@@ -13,6 +13,7 @@
         class="search-item border-bottom"
         v-for="item of list"
         :key="item.id"
+        @click="handleFoodClick(item.name)"
       >{{item.name}}
       </li>
       <li class="search-item border-bottom" v-show="noData">
@@ -24,7 +25,10 @@
 </template>
 
 <script>
+
 import Bscroll from 'better-scroll'
+import { mapMutations } from 'vuex'
+
 export default {
   name: 'FoodSearch',
   props:{
@@ -36,6 +40,13 @@ export default {
       list:[],
       timer:null
     }
+  },
+  methods: {
+    handleFoodClick(food) {
+      this.changeFood(food)
+      this.$router.push('/')
+    },
+    ...mapMutations(['changeFood'])
   },
   computed:{
     noData(){

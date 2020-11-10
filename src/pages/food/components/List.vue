@@ -5,7 +5,7 @@
         <div class="title border-topbottom">当前美食</div>
         <div class="button-list">
           <div class="button-wrapper">
-            <div class="button">{{ this.$store.state.food }}</div>
+            <div class="button">{{ this.currentFood }}</div>
           </div>
         </div>
       </div>
@@ -24,8 +24,14 @@
       </div>
       <div class="area" v-for="(item, key) of foods" :key="key" :ref="key">
         <div class="title border-topbottom">{{ key }}</div>
-        <div class="item-list" v-for="innerItem of item" :key="innerItem.id">
-          <div class="item border-bottom">{{ innerItem.name }}</div>
+        <div class="item-list"
+          v-for="innerItem of item"
+          :key="innerItem.id"
+          @click="handleFoodClick(innerItem.name)"
+        >
+          <div class="item border-bottom">
+            {{ innerItem.name }}
+          </div>
         </div>
       </div>
     </div>
@@ -34,6 +40,7 @@
 
 <script>
 import Bscroll from "better-scroll";
+import { mapState, mapMutations } from 'vuex'
 export default {
   name: "FoodList",
   props: {
@@ -41,14 +48,21 @@ export default {
     foods: Object,
     letter: String,
   },
+  computed:{
+    ...mapState({
+      currentFood:'food'
+    })
+  },
   methods: {
-    handleFoodClick (food) {
-      this.$store.dispatch("changefood",food)
-      // console.log(food)
+    handleFoodClick(food) {
+      // this.$store.commit("changeFood", food);
+      this.changeFood(food)
+      this.$router.push('/')
     },
+    ...mapMutations(['changeFood'])
   },
   mounted() {
-  this.scroll = new Bscroll(this.$refs.wrapper);
+    this.scroll = new Bscroll(this.$refs.wrapper);
   },
   watch: {
     letter() {

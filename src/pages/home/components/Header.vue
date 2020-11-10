@@ -6,7 +6,7 @@
       <span class="iconfont">&#xe60c;</span>
       输入想吃的/想买的/想玩的</div>
     <router-link to="/food">
-      <div class="header-right">{{this.$store.state.food}}
+      <div class="header-right">{{this.food}}
         <span class="iconfont arrow-icon">&#xe600;</span>
       </div>
     </router-link>
@@ -15,8 +15,12 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
   name: 'HomeHeader',
+  computed:{
+    ...mapState(['food'])
+  }
 }
 </script>
 
@@ -43,7 +47,8 @@ export default {
     border-radius .1rem
     color #ccc
   .header-right
-    width 1.24rem
+    min-width 1.24rem
+    padding 0 0.1rem
     float right
     text-align center
     font-size 16px
