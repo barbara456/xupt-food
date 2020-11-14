@@ -1,19 +1,19 @@
 <template>
   <div>
     <div class="banner" @click="handleBannerClick">
-      <img src="https://s1.ax1x.com/2020/10/27/BlVrbq.jpg" class="banner-img">
+      <img :src="bannerImg" class="banner-img">
       <div class="banner-info">
         <div class="banner-titile">
-          吉周客黄焖鸡
+          {{this.sightName}}
         </div>
         <div class="banner-number">
           <span class="iconfont banner-icon">&#xe60c;</span>
-          5
+          {{this.bannerImgs.length}}
         </div>
       </div>
     </div>
     <common-gallery
-      :imgs='imgs'
+      :imgs='bannerImgs'
       v-show="showGallery"
       @close='handleGalleryClose'
     ></common-gallery>
@@ -24,10 +24,14 @@
 import CommonGallery from 'common/gallery/Gallery'
 export default {
   name: 'DetailBanner',
+  props:{
+    sightName:String,
+    bannerImg:String,
+    bannerImgs:Array
+  },
   data(){
     return{
       showGallery:false,
-      imgs:['https://s1.ax1x.com/2020/10/27/BlVrbq.jpg','https://s1.ax1x.com/2020/11/11/Bjx08P.jpg']
     }
   },
   methods:{
