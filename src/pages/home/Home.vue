@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import ApiUrl from '@/config/api_url'
 import HomeHeader from'./components/Header'
 import HomeSwiper from './components/Swiper'
 import HomeIcons from './components/Icons'
@@ -39,7 +40,7 @@ export default {
   },
   methods:{
     getHomeInfo(){
-      axios.get('/api/index.json?food=' + this.food)
+      axios.get(ApiUrl.api + 'index.json?food=' + this.food)
       .then(this.getHomeInfoSucc)
     },
     getHomeInfoSucc(res){

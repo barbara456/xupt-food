@@ -15,6 +15,7 @@
 </template>
 
 <script>
+import ApiUrl from '@/config/api_url'
 import axios from 'axios'
 import FoodHeader from'./components/Header'
 import FoodSearch from'./components/Search'
@@ -38,7 +39,7 @@ export default {
   },
   methods:{
     getFoodInfo(){
-      axios.get('api/food.json')
+      axios.get(ApiUrl.api + 'food.json?food=')
       .then(this.handleGetFoodInfoSucc)
     },
     handleGetFoodInfoSucc(res){

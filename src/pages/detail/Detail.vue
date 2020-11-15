@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import ApiUrl from '@/config/api_url'
 import DetailBanner from "./components/Banner";
 import DetailHeader from "./components/Header";
 import DetailList from "./components/List";
@@ -36,7 +37,7 @@ export default {
   methods: {
     getDetailInfo() {
       axios
-        .get("./api/detail.json", {
+        .get(ApiUrl.api + "detail.json", {
           params: {
             id: this.$route.params.id,
           },
