@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'babel-polyfill'
 import router from './router'
 import store from './store'
 import 'styles/reset.css'
