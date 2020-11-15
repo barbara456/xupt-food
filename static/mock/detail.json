@@ -1,0 +1,25 @@
+{
+  "ret": true,
+  "data": {
+    "sightName": "吉周客黄焖鸡",
+    "bannerImg": "https://s1.ax1x.com/2020/10/27/BlVrbq.jpg",
+    "gallaryImgs": ["https://s1.ax1x.com/2020/10/27/BlVrbq.jpg","https://s1.ax1x.com/2020/11/11/Bjx08P.jpg"],
+    "categoryList": [{
+        "title": "小份黄焖鸡",
+        "children": [{
+          "title": "小份黄焖鸡+土豆",
+          "children": [{
+            "title": "小份黄焖鸡+土豆+金针菇"
+          }]
+        },{
+          "title": "小份黄焖鸡+金针菇"
+        }]
+      }, {
+        "title": "大份黄焖鸡"
+      }, {
+        "title": "小份黄焖排骨"
+      }, {
+        "title": "大份黄焖排骨"
+      }]
+  }
+}
