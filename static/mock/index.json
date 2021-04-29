@@ -1,128 +1,128 @@
 {
-  "ret": true,
-  "data": {
-    "swiperList": [
-      {
-        "id": "0001",
-        "imgUrl": "http://www.xiyou.edu.cn/images/0929guoqing.jpg"
-      },
-      {
-        "id": "0002",
-        "imgUrl": "http://www.xiyou.edu.cn/images/0905jieyueliangshi.jpg"
-      }
-    ],
-    "iconList": [
-      {
-        "id": "0001",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png",
-        "desc": "超市便利"
-      },
-      {
-        "id": "0002",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1711/df/86cbcfc533330d02.png",
-        "desc": "快速自取"
-      },
-      {
-        "id": "0003",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1710/a6/83f636bd75ae6302.png",
-        "desc": "自取趁热"
-      },
-      {
-        "id": "0004",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/35/2640cab202c41b02.png",
-        "desc": "室外约会"
-      },
-      {
-        "id": "0005",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/d0/e09575e66f4aa402.png",
-        "desc": "情侣游玩"
-      },
-      {
-        "id": "0006",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/59/569d3c096e542502.png",
-        "desc": "饮品甜品"
-      },
-      {
-        "id": "0007",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/17/4bd370f3eb1acd02.png",
-        "desc": "美食外卖"
-      },
-      {
-        "id": "0008",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/7f/b1ea3c8c7fb6db02.png",
-        "desc": "学校景点"
-      },
-      {
-        "id": "0009",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png",
-        "desc": "一键直达"
-      }
-    ],
-    "recommendList": [
-      {
-        "id": "0001",
-        "imgUrl": "https://s1.ax1x.com/2020/10/27/BlVrbq.jpg",
-        "title": "黄焖鸡套餐+香菇+鱼豆腐+金针菇",
-        "desc": "吉周客黄焖鸡（政法店）",
-        "discount":"$19.9",
-        "usual":"$29.9"
-      },
-      {
-        "id": "0002",
-        "imgUrl": "https://s1.ax1x.com/2020/10/27/BlEhHP.jpg",
-        "title": "煎饼果子套餐+鸡蛋+生菜+培根",
-        "desc": "好再来煎饼果子（邮电店）",
-        "discount":"$6.9",
-        "usual":"$10.9"
-      },
-      {
-        "id": "0003",
-        "imgUrl": "https://s1.ax1x.com/2020/10/27/BlV1KA.jpg",
-        "title": "鲜香蟹黄包+灵魂料汁+外卖",
-        "desc": "小六汤包",
-        "discount":"$17.9",
-        "usual":"$29.9"
-      },
-      {
-        "id": "0004",
-        "imgUrl": "https://s1.ax1x.com/2020/10/27/BlVa8g.jpg",
-        "title": "万州烤鱼套餐+土豆粉+鹌鹑蛋+米饭（2碗）",
-        "desc": "四川人家（师院店）",
-        "discount":"$49.9",
-        "usual":"$89.9"
-      }
-    ],
-    "weekendList": [
-      {
-        "id": "0001",
-        "imgUrl": "https://s1.ax1x.com/2020/10/27/BluggS.jpg",
-        "title": "煎烤牛柳+迷迭香+炒年糕",
-        "desc": "王妃家的火锅（政法店）"
-      },
-      {
-        "id": "0002",
-        "imgUrl": "https://s1.ax1x.com/2020/10/27/BluINq.jpg",
-        "title": "法国牛角包+黑加仑+榛子",
-        "desc": "好利来（师大店）"
-      },
-      {
-        "id": "0003",
-        "imgUrl": "https://s1.ax1x.com/2020/10/27/BlVrbq.jpg",
-        "title": "黄焖鸡套餐+香菇+鱼豆腐+金针菇",
-        "desc": "吉周客黄焖鸡（政法店）"
-      },
-      {
-        "id": "0004",
-        "imgUrl": "https://s1.ax1x.com/2020/10/27/BlKaGV.jpg",
-        "title": "秘制凉皮+西安肉夹馍",
-        "desc": "魏家凉皮（邮电店）"
-      },
-      {
-        "id": "0005",
-        "imgUrl": "https://s1.ax1x.com/2020/10/27/BlMwFI.jpg",
-        "title": "新疆牛肉炒米粉+炒馕",
-        "desc": "新疆炒米粉（政法店）"
-      }
-    ]
+  "ret":true,
+  "data":{
+      "swiperList":[
+          {
+              "id":"0001",
+              "imgUrl":"http://www.xiyou.edu.cn/images/0929guoqing.jpg"
+          },
+          {
+              "id":"0002",
+              "imgUrl":"http://www.xiyou.edu.cn/images/0905jieyueliangshi.jpg"
+          }
+      ],
+      "iconList":[
+          {
+              "id":"0001",
+              "imgUrl":"http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png",
+              "desc":"超市便利"
+          },
+          {
+              "id":"0002",
+              "imgUrl":"http://img1.qunarzz.com/piao/fusion/1711/df/86cbcfc533330d02.png",
+              "desc":"快速自取"
+          },
+          {
+              "id":"0003",
+              "imgUrl":"http://img1.qunarzz.com/piao/fusion/1710/a6/83f636bd75ae6302.png",
+              "desc":"自取趁热"
+          },
+          {
+              "id":"0004",
+              "imgUrl":"http://img1.qunarzz.com/piao/fusion/1611/35/2640cab202c41b02.png",
+              "desc":"室外约会"
+          },
+          {
+              "id":"0005",
+              "imgUrl":"http://img1.qunarzz.com/piao/fusion/1611/d0/e09575e66f4aa402.png",
+              "desc":"情侣游玩"
+          },
+          {
+              "id":"0006",
+              "imgUrl":"http://img1.qunarzz.com/piao/fusion/1611/59/569d3c096e542502.png",
+              "desc":"饮品甜品"
+          },
+          {
+              "id":"0007",
+              "imgUrl":"http://img1.qunarzz.com/piao/fusion/1611/17/4bd370f3eb1acd02.png",
+              "desc":"美食外卖"
+          },
+          {
+              "id":"0008",
+              "imgUrl":"http://img1.qunarzz.com/piao/fusion/1611/7f/b1ea3c8c7fb6db02.png",
+              "desc":"学校景点"
+          },
+          {
+              "id":"0009",
+              "imgUrl":"http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png",
+              "desc":"一键直达"
+          }
+      ],
+      "recommendList":[
+          {
+              "id":"0001",
+              "imgUrl":"https://s1.ax1x.com/2020/10/27/BlVrbq.jpg",
+              "title":"黄焖鸡套餐+香菇+鱼豆腐+金针菇",
+              "desc":"吉周客黄焖鸡（政法店）",
+              "discount":"$19.9",
+              "usual":"$29.9"
+          },
+          {
+              "id":"0002",
+              "imgUrl":"https://s1.ax1x.com/2020/10/27/BlEhHP.jpg",
+              "title":"煎饼果子套餐+鸡蛋+生菜+培根",
+              "desc":"好再来煎饼果子（邮电店）",
+              "discount":"$6.9",
+              "usual":"$10.9"
+          },
+          {
+              "id":"0003",
+              "imgUrl":"https://s1.ax1x.com/2020/10/27/BlV1KA.jpg",
+              "title":"鲜香蟹黄包+灵魂料汁+外卖",
+              "desc":"小六汤包",
+              "discount":"$17.9",
+              "usual":"$29.9"
+          },
+          {
+              "id":"0004",
+              "imgUrl":"https://s1.ax1x.com/2020/10/27/BlVa8g.jpg",
+              "title":"万州烤鱼套餐+土豆粉+鹌鹑蛋+米饭（2碗）",
+              "desc":"四川人家（师院店）",
+              "discount":"$49.9",
+              "usual":"$89.9"
+          }
+      ],
+      "weekendList":[
+          {
+              "id":"0001",
+              "imgUrl":"https://s1.ax1x.com/2020/10/27/BluggS.jpg",
+              "title":"煎烤牛柳+迷迭香+炒年糕",
+              "desc":"王妃家的火锅（政法店）"
+          },
+          {
+              "id":"0002",
+              "imgUrl":"https://s1.ax1x.com/2020/10/27/BluINq.jpg",
+              "title":"法国牛角包+黑加仑+榛子",
+              "desc":"好利来（师大店）"
+          },
+          {
+              "id":"0003",
+              "imgUrl":"https://s1.ax1x.com/2020/10/27/BlVrbq.jpg",
+              "title":"黄焖鸡套餐+香菇+鱼豆腐+金针菇",
+              "desc":"吉周客黄焖鸡（政法店）"
+          },
+          {
+              "id":"0004",
+              "imgUrl":"https://s1.ax1x.com/2020/10/27/BlKaGV.jpg",
+              "title":"秘制凉皮+西安肉夹馍",
+              "desc":"魏家凉皮（邮电店）"
+          },
+          {
+              "id":"0005",
+              "imgUrl":"https://s1.ax1x.com/2020/10/27/BlMwFI.jpg",
+              "title":"新疆牛肉炒米粉+炒馕",
+              "desc":"新疆炒米粉（政法店）"
+          }
+      ]
   }
 }
