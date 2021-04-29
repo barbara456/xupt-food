@@ -24,15 +24,15 @@
       </div>
       <div class="area" v-for="(item, key) of foods" :key="key" :ref="key">
         <div class="title border-topbottom">{{ key }}</div>
-        <div class="item-list"
-          v-for="innerItem of item"
-          :key="innerItem.id"
-          @click="handleFoodClick(innerItem.name)"
-        >
-          <div class="item border-bottom">
-            {{ innerItem.name }}
+          <div class="item-list"
+            v-for="innerItem of item"
+            :key="innerItem.id"
+            @click="handleFoodClick(innerItem.name)"
+          >
+            <div class="item border-bottom">
+              {{ innerItem.name }}
+            </div>
           </div>
-        </div>
       </div>
     </div>
   </div>
