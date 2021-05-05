@@ -47,7 +47,6 @@ export default {
       res=res.data
       if(res){
         const data=res
-        console.log(data)
         this.swiperList=data.filter(item=>item.type===1)
         this.iconList=data.filter(item=>item.type===2)
         this.recommendList=data.filter(item=>item.type===3)

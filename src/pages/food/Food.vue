@@ -44,7 +44,6 @@ export default {
     },
     handleGetFoodInfoSucc(res){
       res=res.data
-      console.log(res)
       if(res){
         const data=res
 
