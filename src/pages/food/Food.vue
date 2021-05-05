@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import ApiUrl from '@/config/api_url'
+import {useUrl} from '../../config/api_url';
 import axios from 'axios'
 import FoodHeader from'./components/Header'
 import FoodSearch from'./components/Search'
@@ -39,7 +39,7 @@ export default {
   },
   methods:{
     getFoodInfo(){
-      axios.get("http://localhost:8888/clothes")
+      axios.get(`${useUrl}/clothes`)
       .then(this.handleGetFoodInfoSucc)
     },
     handleGetFoodInfoSucc(res){

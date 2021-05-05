@@ -1,8 +1,5 @@
-export default {
-    api: '/static/mock/'
-}
+export const onlineUrl = 'http://82.156.198.140:8888';
 
+export const mockUrl = '/static/mock/';
 
-export const onlineUrl = '';
-
-export const mockUrl = '';
+export const useUrl = onlineUrl;
