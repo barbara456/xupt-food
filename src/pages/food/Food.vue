@@ -39,15 +39,23 @@ export default {
   },
   methods:{
     getFoodInfo(){
-      axios.get(ApiUrl.api + 'food.json?food=')
+      axios.get("http://localhost:8888/clothes")
       .then(this.handleGetFoodInfoSucc)
     },
     handleGetFoodInfoSucc(res){
       res=res.data
-      if(res.ret&&res.data){
-        const data=res.data
-        this.foods=data.foods
-        this.hotFoods=data.hotFoods
+      console.log(res)
+      if(res){
+        const data=res
+
+        this.foods=data.filter(item=>item.type===2)
+        this.foods=Object.assign({}, ...
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").map(item => {
+            return {
+                [item]: this.foods.filter(item_ => item_.spell.toUpperCase().startsWith(item))
+            }
+        }))
+        this.hotFoods=data.filter(item=>item.type===1)
       }
     },
     handleLetterChange(letter){

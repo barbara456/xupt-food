@@ -40,17 +40,18 @@ export default {
   },
   methods:{
     getHomeInfo(){
-      axios.get(ApiUrl.api + 'index.json?food=' + this.food)
+      axios.get('http://localhost:8888/furnitrue')
       .then(this.getHomeInfoSucc)
     },
     getHomeInfoSucc(res){
       res=res.data
-      if(res.ret && res.data){
-        const data=res.data
-        this.swiperList=data.swiperList
-        this.iconList=data.iconList
-        this.recommendList=data.recommendList
-        this.weekendList=data.weekendList
+      if(res){
+        const data=res
+        console.log(data)
+        this.swiperList=data.filter(item=>item.type===1)
+        this.iconList=data.filter(item=>item.type===2)
+        this.recommendList=data.filter(item=>item.type===3)
+        this.weekendList=data.filter(item=>item.type===4)
       }
     }
   },
