@@ -4,6 +4,8 @@
 
 后端仓库：https://github.com/barbara456/be-xupt-food
 
+测试登录账号：admin
+测试登录密码：admin
 # xuptfood
 # 安装运行与打包
 
