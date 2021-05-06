@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import ApiUrl from '@/config/api_url'
+import {userUrl} from  '../../config/api_url';
 import HomeHeader from'./components/Header'
 import HomeSwiper from './components/Swiper'
 import HomeIcons from './components/Icons'
@@ -40,7 +40,7 @@ export default {
   },
   methods:{
     getHomeInfo(){
-      axios.get('http://localhost:8888/furnitrue')
+      axios.get(`${userUrl}/home`)
       .then(this.getHomeInfoSucc)
     },
     getHomeInfoSucc(res){

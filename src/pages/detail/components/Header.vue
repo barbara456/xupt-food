@@ -1,10 +1,10 @@
 <template>
   <div>
-    <router-link tag="div" to="/" class="header-abs" v-show="showAbs">
+    <router-link tag="div" to="/home" class="header-abs" v-show="showAbs">
       <div class="iconfont header-abs-back">&#xe60b;</div>
     </router-link>
     <div class="header-fixed" v-show="!showAbs" :style="opacityStyle">
-      <router-link to="/">
+      <router-link to="/home">
         <div class="iconfont header-fixed-back">&#xe60b;</div>
       </router-link>
       食物详情

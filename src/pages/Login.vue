@@ -1,14 +1,14 @@
 <template>
   <div class="container">
-    <input 
+    <input
       class="loginUserName"
-      v-model="userName"  
+      v-model="userName"
       placeholder="请输入用户名">
-    <input 
-      type="password" 
+    <input
+      type="password"
       class="loginPassword"
-      maxlength="20" 
-      v-model="password"  
+      maxlength="20"
+      v-model="password"
       placeholder="请输入密码"
     >
     <button class="loginButton" @click="login()">登录</button>
@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import {useUrl} from '../config/api_url';
+import {userUrl} from '../config/api_url';
 import axios from "axios";
 
 export default {
@@ -30,18 +30,20 @@ export default {
   methods: {
     login() {
       axios
-        .post(`${useUrl}/login`, {
+        .post(`${userUrl}/login`, {
           userName: this.userName,
           password: this.password
         })
         .then(res => {
           const data = res.data;
           if(!!data) {
+            console.log(data)
             this.$router.push('/home')
           } else {
+            console.log(data)
             alert('用户名或密码错误');
           }
-          
+
         })
         .catch(err => {
           alert('登录失败');
@@ -63,7 +65,7 @@ export default {
   flex-direction column
   justify-content center
   align-items center
-  .loginUserName 
+  .loginUserName
     background-color: transparent
     border 1px solid #ffffff
     padding 5px 10px

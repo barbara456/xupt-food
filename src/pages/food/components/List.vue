@@ -57,7 +57,7 @@ export default {
     handleFoodClick(food) {
       // this.$store.commit("changeFood", food);
       this.changeFood(food)
-      this.$router.push('/')
+      this.$router.push('/home')
     },
     ...mapMutations(['changeFood'])
   },

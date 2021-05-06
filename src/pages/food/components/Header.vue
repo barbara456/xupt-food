@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     想吃什么
-    <router-link to="/">
+    <router-link to="/Home">
       <div class="iconfont header-back">&#xe60b;</div>
     </router-link>
   </div>
