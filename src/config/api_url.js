@@ -5,4 +5,4 @@ export const testUrl = 'http://localhost:8888';
 // 本地mock数据接口
 export const mockUrl = '/static/mock/';
 // 实际使用数据接口
-export const userUrl = testUrl;
+export const userUrl = onlineUrl;
