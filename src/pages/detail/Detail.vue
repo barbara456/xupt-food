@@ -9,7 +9,7 @@
     <div class="content">
       <detail-list :list="list"></detail-list>
     </div>
-    <detail-comment></detail-comment>
+    <detail-comment :comment="comment"></detail-comment>
   </div>
 </template>
 
@@ -20,7 +20,8 @@ import DetailHeader from "./components/Header";
 import DetailList from "./components/List";
 import DetailComment from "./components/CommentButton"
 import axios from "axios";
-import { mockUrl } from '../../config/api_url';
+import { userUrl } from '../../config/api_url';
+import {handleCategoryList} from '../../config/utils';
 
 export default {
   name: "Detail",
@@ -37,12 +38,13 @@ export default {
       bannerImg:'',
       gallaryImgs:[],
       list: [],
+      comment: {}
     };
   },
   methods: {
     getDetailInfo() {
       axios
-        .get(mockUrl + "detail.json", {
+        .get(userUrl + "/foodDetail", {
           params: {
             id: this.$route.params.id,
           },
@@ -50,14 +52,28 @@ export default {
         .then(this.handleGetDataSucc);
     },
     handleGetDataSucc(res) {
-      res = res.data;
-      if (res.ret && res.data){
-        const data = res.data;
-        this.sightName=data.sightName
-        this.bannerImg=data.bannerImg
-        this.gallaryImgs=data.gallaryImgs
-        this.list=data.categoryList
-      }
+      const data = res.data;
+      const { gn, an,bn} = data[0];
+      this.comment = {
+        gn,an,bn
+      };
+      console.log(data[0])
+      this.bannerImg=data[0].imgUrl
+
+      // todo: 优化轮播
+      this.gallaryImgs=[data[0].imgUrl]
+
+      this.list = handleCategoryList(data[0].title)
+
+      // 旧逻辑
+      // res = res.data;
+      // if (res.ret && res.data){
+      //   const data = res.data;
+      //   this.sightName=data.sightName
+      //   this.bannerImg=data.bannerImg
+      //   this.gallaryImgs=data.gallaryImgs
+      //   this.list=data.categoryList
+      // }
     },
   },
   mounted() {
