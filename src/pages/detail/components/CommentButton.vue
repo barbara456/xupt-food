@@ -1,8 +1,8 @@
 <template>
   <div class="button">
-    <button>好评</button>
-    <button>中评</button>
-    <button>差评</button>
+    <button><img src="https://z3.ax1x.com/2021/05/29/2A2Gbq.png">好评</button>
+    <button><img src="https://z3.ax1x.com/2021/05/29/2A2jzQ.png">中评</button>
+    <button><img src="https://z3.ax1x.com/2021/05/29/2AR9Zq.png">差评</button>
   </div>
 </template>
 
@@ -14,17 +14,20 @@ export default {
 
 <style lang="stylus" scoped>
 .button
-  // display flex
-  background-color red
-  height 5rem
+  display flex
+  justify-content space-around
+  height 1rem
   width 5rem
   position fixed
-  left 2rem
+  left 1rem
   top 12rem
-  right 2rem
+  right 1rem
   bottom 0
   button
-    width 100
-    height 20
-    color red
+    width 0.9rem
+    height 0.9rem
+    border-radius 50%
+    img
+      width 100%
+      height auto
 </style>
