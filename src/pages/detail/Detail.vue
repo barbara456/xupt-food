@@ -9,6 +9,7 @@
     <div class="content">
       <detail-list :list="list"></detail-list>
     </div>
+    <detail-comment></detail-comment>
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import ApiUrl from '@/config/api_url'
 import DetailBanner from "./components/Banner";
 import DetailHeader from "./components/Header";
 import DetailList from "./components/List";
+import DetailComment from "./components/CommentButton"
 import axios from "axios";
 import { mockUrl } from '../../config/api_url';
 
@@ -26,6 +28,8 @@ export default {
     DetailBanner,
     DetailHeader,
     DetailList,
+    DetailComment,
+
   },
   data() {
     return {

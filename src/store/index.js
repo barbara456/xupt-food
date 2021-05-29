@@ -6,11 +6,6 @@ import mutations from './mutaions'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state,
-  // actions: {
-  //   changefood(fdx, food) {
-  //     fdx.commit('changeFood',food)
-  //   }
-  // },
-  mutations,
+    state,
+    mutations,
 })
